@@ -1,0 +1,21 @@
+{
+  "name": "chatbot-israeli-soc",
+  "version": "1.0.0",
+  "description": "A chatbot used for the Imperial College Israeli Society",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chatbot",
+    "Israeli",
+    "Society",
+    "Imperial",
+    "College"
+  ],
+  "author": "Léon Wiederkehr",
+  "license": "ISC",
+  "dependencies": {
+    "apiai": "^4.0.3"
+  }
+}
