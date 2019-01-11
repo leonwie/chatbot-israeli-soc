@@ -11,6 +11,7 @@ var responsex;
 request.on('response', function(response) {
     responseParsed=response.result.fulfillment.speech;
     console.log(responseParsed);
+    return responseParsed;
 });
 
 request.on('error', function(error) {
@@ -18,3 +19,10 @@ request.on('error', function(error) {
 });
 
 request.end();
+
+module.exports ={
+  request,
+  func1 : function() {
+    return "hello world";
+  }
+}

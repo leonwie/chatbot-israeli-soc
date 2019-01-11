@@ -16,6 +16,9 @@
   "author": "Léon Wiederkehr",
   "license": "ISC",
   "dependencies": {
-    "apiai": "^4.0.3"
+    "apiai": "^4.0.3",
+    "express": "^4.16.4",
+    "require": "^2.4.20",
+    "requirejs": "^2.3.6"
   }
 }
