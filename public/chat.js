@@ -20,7 +20,7 @@ $(function(){
 	//Listen on new_message
 	socket.on("new_message_customer", (data) => {
 		message.val('');
-		chatlogs.append("<div class='chat'><div class='user-photo'><img src='images/IsraeliSocietyLogo.png' alt=''></div><div class='chat_customer'><p class='message'>" + data.message + "</p></div></div>");
+		chatlogs.append("<div class='chat'><div class='user-photo'><img src='images/icon_customer.png' alt=''></div><div class='chat_customer'><p class='message'>" + data.message + "</p></div></div>");
 		chatlogs.scrollTop(chatlogs[0].scrollHeight);
 	})
 	socket.on("new_message_company", (data) => {

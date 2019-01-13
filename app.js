@@ -5,18 +5,6 @@ var bodyParser = require("body-parser");
 var app2 = apiai("ac2a4fbe907349c6ac9ba3ee1f27dfc0");
 var favicon = require('serve-favicon');
 
-//Important Build a weather website in 30minutes with node.js + express + open weather
-/*msg2='What internships do you offer?';
-var request = app2.textRequest(msg2, {
-    sessionId: 'lases'
-});*/
-/*var express = require('express'),
-    app = express(),
-    server = require('http').createServer(app),
-    io = require('socket.io').listen(server);*/
-
-//server.listen(process.env.PORT || 3000);
-
 const port = process.env.PORT || 3000;
 var app = express();
 
