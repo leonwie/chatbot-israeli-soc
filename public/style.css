@@ -1,0 +1,128 @@
+:root{
+  --bcolor1: #00adb5; /*Color of overall background and message from company)*/
+  --bcolor2: #393e46; /*Color of messages customer*/
+  --bcolor3: #eeeeee;    /*Chat background*/
+  --bcolor4: #222831; /*Button background when pressed */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    background-color: var(--bcolor1);
+}
+
+.chat {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+section#chatbox {
+  width: 45%;
+  min-width: 390px;
+  height: 80%;
+  background: var(--bcolor3);
+  padding: 25px;
+  margin: 20px auto;
+  box-shadow: 0 3px #ccc;
+}
+
+section#chatlogs {
+  padding: 10px;
+  width: 100%;
+  height: 450px;
+  align: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+section#input_zone {
+  margin-top:20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+section#chatlogs::-webkit-scrollbar {
+  width: 10px;
+}
+
+section#chatlogs::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background: rgba(0, 0, 0,.1);
+}
+
+input#message {
+  background: #dfdfdf;
+  width: 100%;
+  height: 50px;
+  border: 2px solid #eee;
+  border-radius: 3px;
+  resize: none;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+}
+input#message:focus {
+  background: var(--bcolor3);
+}
+
+
+button#send_message {
+  background: var(--bcolor1);
+  padding: 5px 15px;
+  font-size: 30px;
+  color: var(--bcolor3);
+  border: none;
+  margin: 0 10px;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 var(--bcolor4);
+  cursor: pointer;
+
+  -webkit-transition: background .2s ease;
+  -moz-transition: background .2s ease;
+  -o-transition: background .2s ease;
+}
+
+button#send_message:hover {
+  background: var(--bcolor4);
+}
+
+.chat .user-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.chat .user-photo img {
+  width: 100%;
+}
+
+p.message {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 10px 0;
+  border-radius: 10px;
+  color: var(--bcolor3);
+  font-size: 20px;
+}
+
+.chat_company {
+    background: var(--bcolor1);
+    border-radius: 10px;
+    width: 80%;
+}
+
+.chat_customer {
+    background: var(--bcolor2);
+    order: -1;
+    border-radius: 10px;
+    width: 80%;
+}
