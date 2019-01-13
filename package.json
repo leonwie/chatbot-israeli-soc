@@ -1,7 +1,7 @@
 {
-  "name": "simplechatapp",
+  "name": "israeli-soc-chatbot",
   "version": "1.0.0",
-  "description": "Simple chat app built with node.js and socket.io",
+  "description": "Simple chatbot app built with node.js and socket.io",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

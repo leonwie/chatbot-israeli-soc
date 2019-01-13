@@ -1,4 +1,4 @@
-const express = require('express');
+//const express = require('express');
 const path = require('path');
 var apiai = require('apiai');
 var bodyParser = require("body-parser");
@@ -10,11 +10,16 @@ var favicon = require('serve-favicon');
 var request = app2.textRequest(msg2, {
     sessionId: 'lases'
 });*/
+var express = require('express'),
+    app = express(),
+    server = require('http').createServer(app),
+    io = require('socket.io').listen(server);
 
+server.listen(process.env.PORT || 3000);
 
-const port = process.env.PORT || 3000;
+/*const port = process.env.PORT || 3000;
 var app = express();
-
+*/
 app.set('view engine', 'ejs');
 //app.use(favicon(__dirname + '/public/images/israelisocietylogo.ico'));
 //console.log(__dirname + '/public/images/israelisocietylogo.ico');
@@ -25,12 +30,12 @@ app.get('/', function(req, res) {
 });
 
 
-
-const server=app.listen(port, () => {
+/*
+server=app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
-});
+});*/
 
-const io = require("socket.io")(server);
+//const io = require("socket.io")(server);
 
 function responsex(msg){
 	io.sockets.emit('new_message_company', {message : msg});
