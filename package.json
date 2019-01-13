@@ -1,24 +1,28 @@
 {
-  "name": "chatbot-israeli-soc",
+  "name": "simplechatapp",
   "version": "1.0.0",
-  "description": "A chatbot used for the Imperial College Israeli Society",
-  "main": "index.js",
+  "description": "Simple chat app built with node.js and socket.io",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
   },
-  "keywords": [
-    "chatbot",
-    "Israeli",
-    "Society",
-    "Imperial",
-    "College"
-  ],
-  "author": "Léon Wiederkehr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngrt/simpleChatApp.git"
+  },
+  "author": "Noufel Gouirhate",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngrt/simpleChatApp/issues"
+  },
+  "homepage": "https://github.com/ngrt/simpleChatApp#readme",
   "dependencies": {
     "apiai": "^4.0.3",
-    "express": "^4.16.4",
-    "require": "^2.4.20",
-    "requirejs": "^2.3.6"
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "nodemon": "^1.14.3",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.0.4"
   }
 }
