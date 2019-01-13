@@ -26,7 +26,7 @@ app.get('/', function(req, res) {
 
 
 
-server=app.listen(port, () => {
+const server=app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
 
