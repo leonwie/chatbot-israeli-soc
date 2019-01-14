@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 var apiai = require('apiai');
 var bodyParser = require("body-parser");
 var app2 = apiai("ac2a4fbe907349c6ac9ba3ee1f27dfc0");
@@ -15,6 +16,8 @@ app.use(express.static(__dirname+'/public'));
 app.get('/', function(req, res) {
   res.render('../views/index.ejs');
 });
+
+
 
 server=app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
